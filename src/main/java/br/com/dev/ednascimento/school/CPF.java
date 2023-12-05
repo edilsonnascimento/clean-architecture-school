@@ -11,8 +11,11 @@ public class CPF {
 
     private void validateCpf(String cpf) {
         var regularExpression = "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$";
-        if (cpf == null ||
-            !cpf.matches(regularExpression))
+        if (cpf == null || !cpf.matches(regularExpression))
             throw new IllegalArgumentException("Invalid CPF!");
+    }
+
+    public String getCPF() {
+        return this.cpf;
     }
 }
