@@ -14,4 +14,8 @@ public class Email {
             !address.matches(regularExpression))
             throw new IllegalArgumentException("E-mail inválido!");
     }
+
+    public String getAddress() {
+        return address;
+    }
 }

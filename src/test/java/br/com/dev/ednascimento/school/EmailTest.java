@@ -1,5 +1,6 @@
 package br.com.dev.ednascimento.school;
 
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 
@@ -10,6 +11,20 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 class EmailTest {
+
+    @Test
+    void GIVEN_valid_email_MUST_create() {
+
+        // Given
+        var expected = "valid@email.com";
+        var domain = new Email(expected);
+
+        // When
+        var actual = domain.getAddress();
+
+        // Then
+        assertThat(actual).isEqualTo(expected);
+    }
 
     @ParameterizedTest
     @MethodSource("inValidDataProvider")
@@ -28,5 +43,4 @@ class EmailTest {
     private static Stream<Arguments> inValidDataProvider() {
         return Stream.of(arguments(""), arguments("ivalidEmail"), null);
     }
-
 }
