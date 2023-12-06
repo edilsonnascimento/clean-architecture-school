@@ -1,4 +1,4 @@
-package br.com.dev.ednascimento.school;
+package br.com.dev.ednascimento.school.student;
 
 public class CPF {
 

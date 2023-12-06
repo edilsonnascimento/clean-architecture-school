@@ -1,5 +1,6 @@
-package br.com.dev.ednascimento.school;
+package br.com.dev.ednascimento.school.student;
 
+import br.com.dev.ednascimento.school.student.Email;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
@@ -10,17 +11,17 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-class CPFTest {
+class EmailTest {
 
     @Test
-    void GIVEN_valid_CPF_MUST_create() {
+    void GIVEN_valid_email_MUST_create() {
 
         // Given
-        var expected = "999.999.999-99";
-        var domain = new CPF(expected);
+        var expected = "valid@email.com";
+        var domain = new Email(expected);
 
         // When
-        var actual = domain.getCPF();
+        var actual = domain.getAddress();
 
         // Then
         assertThat(actual).isEqualTo(expected);
@@ -28,20 +29,19 @@ class CPFTest {
 
     @ParameterizedTest
     @MethodSource("inValidDataProvider")
-    void GIVEN_invalid_cpf_THEN_throws_Expcetion(String cpf) {
+    void GIVEN_invalid_email_THEN_throws_Expcetion(String address) {
 
         // Given
-        var expected = "Invalid CPF!";
+        var expected = "E-mail inválido!";
 
         // When
-        var actual = assertThrows(IllegalArgumentException.class, () -> new CPF(cpf));
+        var actual = assertThrows(IllegalArgumentException.class, () -> new Email(address));
 
         // Then
         assertThat(actual.getMessage()).isEqualTo(expected);
     }
 
     private static Stream<Arguments> inValidDataProvider() {
-        return Stream.of(arguments(""), arguments("999999999"), null);
+        return Stream.of(arguments(""), arguments("ivalidEmail"), null);
     }
-
 }
