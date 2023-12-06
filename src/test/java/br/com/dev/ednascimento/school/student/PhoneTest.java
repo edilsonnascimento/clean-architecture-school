@@ -1,6 +1,6 @@
 package br.com.dev.ednascimento.school.student;
 
-import br.com.dev.ednascimento.school.student.Phone;
+import br.com.dev.ednascimento.school.domain.student.Phone;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 

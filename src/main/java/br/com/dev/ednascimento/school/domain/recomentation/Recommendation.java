@@ -1,6 +1,6 @@
-package br.com.dev.ednascimento.school.recomentation;
+package br.com.dev.ednascimento.school.domain.recomentation;
 
-import br.com.dev.ednascimento.school.student.Student;
+import br.com.dev.ednascimento.school.domain.student.Student;
 
 import java.time.LocalDateTime;
 

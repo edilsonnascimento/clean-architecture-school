@@ -1,17 +1,15 @@
-package br.com.dev.ednascimento.school.student;
-
-import br.com.dev.ednascimento.school.student.*;
+package br.com.dev.ednascimento.school.domain.student;
 
 import java.util.*;
 
 public class Student {
-    private CPF cpf;
+    private NationalIdentification nationalIdentification;
     private String name;
     private Email email;
     private List<Phone> phones = new ArrayList<>();
 
-    public Student(CPF cpf, String name, Email email) {
-        this.cpf = cpf;
+    public Student(NationalIdentification nationalIdentification, String name, Email email) {
+        this.nationalIdentification = nationalIdentification;
         this.name = name;
         this.email = email;
     }
@@ -20,8 +18,8 @@ public class Student {
         this.phones.add(new Phone(ddd, number));
     }
 
-    public CPF getCpf() {
-        return cpf;
+    public NationalIdentification getNationalIdentification() {
+        return nationalIdentification;
     }
 
     public String getName() {

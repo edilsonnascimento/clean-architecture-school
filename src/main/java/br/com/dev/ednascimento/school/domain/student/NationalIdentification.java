@@ -1,10 +1,10 @@
-package br.com.dev.ednascimento.school.student;
+package br.com.dev.ednascimento.school.domain.student;
 
-public class CPF {
+public class NationalIdentification {
 
     private String cpf;
 
-    public CPF(String cpf) {
+    public NationalIdentification(String cpf) {
         validateCpf(cpf);
         this.cpf = cpf;
     }

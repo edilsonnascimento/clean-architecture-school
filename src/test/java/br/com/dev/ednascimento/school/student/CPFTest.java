@@ -1,5 +1,6 @@
 package br.com.dev.ednascimento.school.student;
 
+import br.com.dev.ednascimento.school.domain.student.NationalIdentification;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
@@ -17,7 +18,7 @@ class CPFTest {
 
         // Given
         var expected = "999.999.999-99";
-        var domain = new CPF(expected);
+        var domain = new NationalIdentification(expected);
 
         // When
         var actual = domain.getCPF();
@@ -34,7 +35,7 @@ class CPFTest {
         var expected = "Invalid CPF!";
 
         // When
-        var actual = assertThrows(IllegalArgumentException.class, () -> new CPF(cpf));
+        var actual = assertThrows(IllegalArgumentException.class, () -> new NationalIdentification(cpf));
 
         // Then
         assertThat(actual.getMessage()).isEqualTo(expected);

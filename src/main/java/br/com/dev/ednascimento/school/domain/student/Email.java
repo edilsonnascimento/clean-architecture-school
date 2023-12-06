@@ -1,4 +1,4 @@
-package br.com.dev.ednascimento.school.student;
+package br.com.dev.ednascimento.school.domain.student;
 
 public class Email {
     private String address;

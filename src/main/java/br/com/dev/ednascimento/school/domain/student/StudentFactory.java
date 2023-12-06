@@ -1,11 +1,11 @@
-package br.com.dev.ednascimento.school.student;
+package br.com.dev.ednascimento.school.domain.student;
 
 public class StudentFactory {
 
     private Student student;
 
     public StudentFactory withNameCPFEmail(String name, String cpf, String email) {
-        this.student = new Student(new CPF(cpf), name, new Email(email));
+        this.student = new Student(new NationalIdentification(cpf), name, new Email(email));
         return this;
     }
 
