@@ -6,6 +6,7 @@ public class Student {
     private NationalIdentification nationalIdentification;
     private String name;
     private Email email;
+    private String password;
     private List<Phone> phones = new ArrayList<>();
 
     public Student(NationalIdentification nationalIdentification, String name, Email email) {
