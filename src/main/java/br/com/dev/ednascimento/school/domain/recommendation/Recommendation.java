@@ -1,4 +1,4 @@
-package br.com.dev.ednascimento.school.domain.recomentation;
+package br.com.dev.ednascimento.school.domain.recommendation;
 
 import br.com.dev.ednascimento.school.domain.student.Student;
 
@@ -6,9 +6,9 @@ import java.time.LocalDateTime;
 
 public class Recommendation {
 
-    private Student indicated;
-    private Student indicator;
-    private LocalDateTime recommendationDate;
+    private final Student indicated;
+    private final Student indicator;
+    private final LocalDateTime recommendationDate;
 
     public Recommendation(Student indicated, Student indicator) {
         this.indicated = indicated;

@@ -34,4 +34,8 @@ public class Student {
     public List<Phone> getPhones() {
         return phones;
     }
+
+    public String getPassword() {
+        return this.password;
+    }
 }

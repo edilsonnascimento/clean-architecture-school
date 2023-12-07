@@ -15,6 +15,7 @@ dependencies {
 
     // Implementation
     implementation("org.springframework.boot:spring-boot-starter-jdbc")
+    implementation("com.sun.mail:javax.mail:1.6.2")
 
     // Test
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
