@@ -9,7 +9,7 @@ public class StudentRepositoryMemoryImpl implements StudentRepository {
     private List<Student> studentsEnrolled = new ArrayList<>();
 
     @Override
-    public void register(Student student) {
+    public void save(Student student) {
         studentsEnrolled.add(student);
     }
 

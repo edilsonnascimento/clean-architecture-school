@@ -18,7 +18,7 @@ public class StudentRepositoryJDBCImpl implements StudentRepository {
     private NamedParameterJdbcTemplate jdbcTemplate;
 
     @Override
-    public void register(Student student) {
+    public void save(Student student) {
         var sql =
                   """
                   INSERT INTO student(national_identification, name, email)
