@@ -1,4 +1,4 @@
-package br.com.dev.ednascimento.school.app.recommendation;
+package br.com.dev.ednascimento.school.app.enrolled;
 
 import br.com.dev.ednascimento.school.domain.student.StudentRepository;
 

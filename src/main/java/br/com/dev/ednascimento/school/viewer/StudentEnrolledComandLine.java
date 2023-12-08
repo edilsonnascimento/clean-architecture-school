@@ -1,6 +1,6 @@
 package br.com.dev.ednascimento.school.viewer;
 
-import br.com.dev.ednascimento.school.app.recommendation.*;
+import br.com.dev.ednascimento.school.app.enrolled.*;
 import br.com.dev.ednascimento.school.infra.school.StudentRepositoryMemoryImpl;
 
 public class StudentEnrolledComandLine {
