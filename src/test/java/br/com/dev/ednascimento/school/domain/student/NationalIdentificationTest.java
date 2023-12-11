@@ -1,6 +1,5 @@
-package br.com.dev.ednascimento.school.student;
+package br.com.dev.ednascimento.school.domain.student;
 
-import br.com.dev.ednascimento.school.domain.student.NationalIdentification;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
@@ -11,7 +10,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-class CPFTest {
+class NationalIdentificationTest {
 
     @Test
     void GIVEN_valid_CPF_MUST_create() {

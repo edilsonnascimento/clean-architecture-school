@@ -16,6 +16,8 @@ public class Student {
     }
 
     public void addPhone(String ddd, String number) {
+        if(phones.size() == 2)
+            throw new BusinessException("exceeded the maximum number of reported telephone numbers");
         this.phones.add(new Phone(ddd, number));
     }
 

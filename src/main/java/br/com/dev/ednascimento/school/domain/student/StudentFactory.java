@@ -9,8 +9,8 @@ public class StudentFactory {
         return this;
     }
 
-    public StudentFactory withPhone(String ddd, String numero) {
-        this.student.addPhone(ddd, numero);
+    public StudentFactory withPhone(String ddd, String number) {
+        this.student.addPhone(ddd, number);
         return this;
     }
 

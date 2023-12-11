@@ -1,4 +1,4 @@
-package br.com.dev.ednascimento.school.student;
+package br.com.dev.ednascimento.school.domain.student;
 
 import br.com.dev.ednascimento.school.domain.student.Email;
 import org.junit.jupiter.api.Test;
