@@ -1,6 +1,7 @@
 package br.com.dev.ednascimento.school.viewer;
 
 import br.com.dev.ednascimento.school.app.enrolled.*;
+import br.com.dev.ednascimento.school.domain.EventPublisher;
 import br.com.dev.ednascimento.school.infra.school.StudentRepositoryMemoryImpl;
 
 public class StudentEnrolledComandLine {
@@ -9,8 +10,10 @@ public class StudentEnrolledComandLine {
         var name = "Fulano da Silva";
         var cpf = "123.456.789-00";
         var email = "fulano@email.com";
+        var publisher = new EventPublisher();
 
-        var enrolled = new StudentEnrolled(new StudentRepositoryMemoryImpl());
+
+        var enrolled = new StudentEnrolled(new StudentRepositoryMemoryImpl(), publisher);
         enrolled.register(new StudentDto(name, cpf, email));
     }
 }

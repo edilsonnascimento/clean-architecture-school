@@ -18,4 +18,11 @@ public class NationalIdentification {
     public String getCPF() {
         return this.cpf;
     }
+
+    @Override
+    public String toString() {
+        return "NationalIdentification{" +
+               "cpf='" + cpf + '\'' +
+               '}';
+    }
 }
