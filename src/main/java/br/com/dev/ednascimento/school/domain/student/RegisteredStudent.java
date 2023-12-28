@@ -18,4 +18,8 @@ public class RegisteredStudent implements Event {
     public LocalDateTime instant() {
         return this.instant;
     }
+
+    public NationalIdentification getNationalIdentification() {
+        return nationalIdentification;
+    }
 }
