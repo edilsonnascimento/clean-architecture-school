@@ -1,7 +1,7 @@
-package br.com.dev.ednascimento.school.stamp.stamp;
+package br.com.dev.ednascimento.school.game.domain.stamp;
 
 
-import br.com.dev.ednascimento.school.academic.domain.student.NationalIdentification;
+import br.com.dev.ednascimento.school.shared.domain.NationalIdentification;
 
 import java.util.List;
 

@@ -1,5 +1,7 @@
 package br.com.dev.ednascimento.school.academic.domain.student;
 
+import br.com.dev.ednascimento.school.shared.domain.NationalIdentification;
+
 public class StudentFactory {
 
     private Student student;

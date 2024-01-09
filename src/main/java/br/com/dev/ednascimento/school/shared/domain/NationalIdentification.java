@@ -1,4 +1,4 @@
-package br.com.dev.ednascimento.school.academic.domain.student;
+package br.com.dev.ednascimento.school.shared.domain;
 
 public class NationalIdentification {
 

@@ -4,6 +4,7 @@ import br.com.dev.ednascimento.school.academic.app.enrolled.*;
 import br.com.dev.ednascimento.school.academic.domain.EventPublisher;
 import br.com.dev.ednascimento.school.academic.domain.student.*;
 import br.com.dev.ednascimento.school.academic.infra.student.StudentRepositoryMemoryImpl;
+import br.com.dev.ednascimento.school.shared.domain.NationalIdentification;
 import org.junit.jupiter.api.*;
 
 import static org.assertj.core.api.Assertions.assertThat;

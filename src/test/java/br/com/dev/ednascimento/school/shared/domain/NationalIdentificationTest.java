@@ -1,6 +1,6 @@
-package br.com.dev.ednascimento.school.academic.student;
+package br.com.dev.ednascimento.school.shared.domain;
 
-import br.com.dev.ednascimento.school.academic.domain.student.NationalIdentification;
+import br.com.dev.ednascimento.school.shared.domain.NationalIdentification;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;

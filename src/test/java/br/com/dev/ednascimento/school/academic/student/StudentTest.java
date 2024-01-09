@@ -1,6 +1,7 @@
 package br.com.dev.ednascimento.school.academic.student;
 
 import br.com.dev.ednascimento.school.academic.domain.student.*;
+import br.com.dev.ednascimento.school.shared.domain.NationalIdentification;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
