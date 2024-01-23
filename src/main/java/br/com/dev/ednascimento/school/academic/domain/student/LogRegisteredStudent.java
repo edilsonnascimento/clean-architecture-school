@@ -1,7 +1,7 @@
 package br.com.dev.ednascimento.school.academic.domain.student;
 
 
-import br.com.dev.ednascimento.school.academic.domain.*;
+import br.com.dev.ednascimento.school.shared.domain.event.*;
 
 import java.time.format.DateTimeFormatter;
 

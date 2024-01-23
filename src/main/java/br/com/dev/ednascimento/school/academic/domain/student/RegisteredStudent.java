@@ -1,9 +1,10 @@
 package br.com.dev.ednascimento.school.academic.domain.student;
 
-import br.com.dev.ednascimento.school.academic.domain.Event;
+import br.com.dev.ednascimento.school.shared.domain.event.*;
 import br.com.dev.ednascimento.school.shared.domain.NationalIdentification;
 
 import java.time.LocalDateTime;
+import java.util.*;
 
 public class RegisteredStudent implements Event {
 
@@ -18,6 +19,16 @@ public class RegisteredStudent implements Event {
     @Override
     public LocalDateTime instant() {
         return this.instant;
+    }
+
+    @Override
+    public EventType getEventType() {
+        return EventType.ENROLLED_STUDENT;
+    }
+
+    @Override
+    public Map<String, Object> getData() {
+        return Map.of("CPF", this.nationalIdentification);
     }
 
     public NationalIdentification getNationalIdentification() {

@@ -1,4 +1,4 @@
-package br.com.dev.ednascimento.school.academic.domain;
+package br.com.dev.ednascimento.school.shared.domain.event;
 
 public abstract class Observable {
 

@@ -1,7 +1,7 @@
 package br.com.dev.ednascimento.school.academic.viewer;
 
 import br.com.dev.ednascimento.school.academic.app.enrolled.*;
-import br.com.dev.ednascimento.school.academic.domain.EventPublisher;
+import br.com.dev.ednascimento.school.shared.domain.event.EventPublisher;
 import br.com.dev.ednascimento.school.academic.infra.student.StudentRepositoryMemoryImpl;
 
 public class StudentEnrolledComandLine {
